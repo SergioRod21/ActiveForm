@@ -1,0 +1,128 @@
+* {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+        height:100%;
+        margin:0;
+        display: flex;
+        flex-direction: column;
+      }
+
+:root {
+    --red: hsl(0, 100%, 74%);
+--green: hsl(154, 59%, 51%);
+--blue: hsl(248, 32%, 49%);
+--darkBlue: hsl(249, 10%, 26%);
+--grayishBlue: hsl(246, 25%, 77%);
+}
+
+.main {
+    width: 100vw;
+    height: 100%;
+    background-image: url(components/images/bg-intro-desktop.png);
+    background-color: var(--red);
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    align-items: center;
+}
+
+.information {
+    color: white;
+    padding-left: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: top;
+}
+
+.information__title {
+    width: 90%;
+    font-weight: 700;
+    line-height: 55px;
+    font-size: 45px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.information__subtitle {
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.free-trial__container {
+    width: 100%;
+    background-color: var(--blue);
+    padding: 2px;
+    justify-self: center;
+    border-radius: 5px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.free-trial {
+    color: white;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+li {
+    list-style: none;
+    justify-self: center;
+}
+
+.form__container {
+    width: 450px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px 20px 15px;
+    border-radius: 8px;
+}
+
+.form input, button {
+    border: 1px solid var(--grayishBlue);
+    border-radius: 5px;
+    width: 400px;
+    height: 45px;
+    margin: 4px;
+}
+
+.form, ul {
+    display: grid;
+    grid-gap: 10px;
+}
+
+input::placeholder {
+    padding-left: 20px;
+}
+
+button {
+    background-color: var(--green);
+    color: white;
+}
+
+.terms-and-conditions {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 8px;
+    color: var(--grayishBlue);
+}
+
+.terms-and-conditions span {
+    font-size: 8px;
+    color: var(--red);
+}
